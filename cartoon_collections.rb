@@ -18,8 +18,8 @@ end
 
 def find_the_cheese (array)
   
- if array.include? (cheese) 
-    return cheese
+ if array.include? ("cheddar") 
+     "cheddar"
   else 
    nil
  end
