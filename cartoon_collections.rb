@@ -3,8 +3,8 @@ def roll_call_dwarves (drarves)
 end
 
 def summon_captain_planet (veggies)
-  veggies.to_a.map! {|name| name.capitalize << "!" } 
-  
+
+  veggies.to_a.map {|name| name.capitalize << "!" } 
 end
 
 def long_planeteer_calls (calls)
@@ -12,10 +12,14 @@ def long_planeteer_calls (calls)
 
 end
 
+def find_the_cheese (cheese)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+end
+
 def find_the_cheese (array)
   
- if array.include? ("cheddar") 
-   "cheddar" 
+ if array.include? (cheese) 
+    return cheese
   else 
    nil
  end
